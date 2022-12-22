@@ -10,8 +10,8 @@ body{
     height: 400px;
     display: flex;
     background-color: #f4f4f4;
-    justify-content: end; /*main axis*/
-    align-items: end;/*cross axis*/
+    justify-content: space-between; /*main axis*/
+    align-items: center;/*cross axis*/
 }
 
 .item{
@@ -20,4 +20,13 @@ body{
     background: blue;
     color: white;
     margin: 10px;
+}
+.item:nth-of-type(1){
+    align-self: start;
+}
+.item:nth-of-type(2){
+    align-self: center;
+}
+.item:nth-of-type(3){
+    align-self: end;
 }
