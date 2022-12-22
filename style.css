@@ -10,10 +10,16 @@ body{
     display: flex;
     background-color: #f4f4f4;
 }
+.flex-container::after{
+  content: '';
+  clear: both;
+  display: block;
+}
 .item{
     width: 100px;
     height: 100px;
     background: blue;
     color: white;
     margin: 10px;
+    float: left;
 }
